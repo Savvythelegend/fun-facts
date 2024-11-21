@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Fun Facts Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Fun Facts Generator</h1>
+    <div id="fact-display">Click the button to reveal a fun fact!</div>
+    <div id="categories">
+        <button class="category-btn" onclick="generateFact('personal')">Personal</button>
+        <button class="category-btn" onclick="generateFact('funny')">Funny</button>
+        <button class="category-btn" onclick="generateFact('random')">Random</button>
+    </div>
+    <button id="generate-btn" onclick="generateFact()">Generate Another Fun Fact</button>
+    <button id="save-btn" onclick="saveFact()">Save Fact</button>
+    <ul id="favorites"></ul>
+    <script src="script.js"></script>
+</body>
+</html>
